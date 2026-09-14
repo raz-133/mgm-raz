@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MGM Tech - ഫോറെക്സ്, ക്രിപ്റ്റോ & ആപ്പ് ഡെവലപ്മെന്റ് സൊല്യൂഷൻസ്</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: #ffffff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .logo-area img {
+            height: 45px; /* ലോഗോയുടെ സൈസ് ഇവിടെ ക്രമീകരിക്കാം */
+        }
+        .logo-area h1 {
+            font-size: 24px;
+            color: #0b2545;
+            font-weight: bold;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+        nav ul li a:hover {
+            color: #0077b6;
+        }
+        .hero {
+            background: linear-gradient(135deg, #0b2545, #134074);
+            color: white;
+            text-align: center;
+            padding: 160px 20px 100px 20px;
+        }
+        .hero h2 {
+            font-size: 38px;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 18px;
+            max-width: 800px;
+            margin: 0 auto 30px auto;
+            color: #d1d5db;
+        }
+        .btn {
+            background: #00b4d8;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #0077b6;
+        }
+        .services {
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .services h2 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 50px;
+            color: #0b2545;
+        }
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .service-card {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        .service-card h3 {
+            color: #134074;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+        .contact {
+            background: #eef4f8;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        .contact h2 {
+            margin-bottom: 20px;
+            color: #0b2545;
+        }
+        footer {
+            background: #0b2545;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ഹെഡർ & ലോഗോ -->
+    <header>
+        <div class="container">
+            <div class="logo-area">
+                <!-- ഇവിടെ നിങ്ങളുടെ കമ്പനിയുടെ ലോഗോ ഇമേജ് നൽകുക (logo.png എന്നതിന് പകരം ഫയൽ പേര് നൽകാം) -->
+                <img src="logo.png" alt="MGM Tech Logo"> 
+                <h1>MGM Tech</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">ഹോം</a></li>
+                    <li><a href="#services">സേവനങ്ങൾ</a></li>
+                    <li><a href="#about">ഞങ്ങളെക്കുറിച്ച്</a></li>
+                    <li><a href="#contact">ബന്ധപ്പെടാൻ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ഹീറോ സെക്ഷൻ -->
+    <section class="hero" id="home">
+        <div class="container" style="flex-direction: column;">
+            <h2>നിങ്ങളുടെ ഡിജിറ്റൽ വളർച്ചയ്ക്കായി ഏറ്റവും മികച്ച സാങ്കേതിക വിദ്യ</h2>
+            <p>ഫോറെക്സ് ബ്രോക്കർ ടൂൾസ്, ഇന്ത്യൻ മാർക്കറ്റ് ടൂൾസ്, ക്രിപ്‌റ്റോ കറൻസി ഡെവലപ്‌മെന്റ്, ആൻഡ്രോയിഡ് & ഐഒഎസ് ആപ്പുകൾ എന്നിവ ഞങ്ങൾ വിശ്വസ്തതയോടെ ചെയ്തു നൽകുന്നു.</p>
+            <a href="#contact" class="btn">ഞങ്ങളെ ബന്ധപ്പെടൂ</a>
+        </div>
+    </section>
+
+    <!-- സേവനങ്ങൾ -->
+    <section class="services" id="services">
+        <h2>ഞങ്ങളുടെ സേവനങ്ങൾ</h2>
+        <div class="service-grid">
+            <div class="service-card">
+                <h3>📈 ഫോറെക്സ് ബ്രോക്കർ ടൂൾസ്</h3>
+                <p>ഫോറെക്സ് ട്രേഡിംഗിനായി കസ്റ്റമൈസ്ഡ് പ്ലാറ്റ്‌ഫോമുകൾ, സിഗ്നൽ ടൂൾസ്, അഡ്വാൻസ്ഡ് ബ്രോക്കർ മാനേജ്‌മെന്റ് സൊല്യൂഷനുകൾ.</p>
+            </div>
+            <div class="service-card">
+                <h3>📊 ഇന്ത്യൻ മാർക്കറ്റ് ടൂൾസ്</h3>
+                <p>ഇന്ത്യൻ ഓഹരി വിപണിക്കായി (NSE/BSE) റിയൽ-ടൈം അനലിറ്റിക്സ് ടൂളുകൾ, അൽഗോ ട്രേഡിംഗ് സപ്പോർട്ട്.</p>
+            </div>
+            <div class="service-card">
+                <h3>🪙 ക്രിപ്റ്റോ കറൻസി ഡെവലപ്മെന്റ്</h3>
+                <p>ബ്ലോക്ക്‌ചെയിൻ സാങ്കേതികവിദ്യ, ക്രിപ്‌റ്റോ എക്‌സ്‌ചേഞ്ച് പ്ലാറ്റ്‌ഫോമുകൾ, സ്വന്തമായി കോയിൻ/ടോക്കൺ നിർമ്മാണം.</p>
+            </div>
+            <div class="service-card">
+                <h3>📱 ആൻഡ്രോയിഡ് & ഐഒഎസ് ആപ്ലിക്കേഷനുകൾ</h3>
+                <p>ബിസിനസ്സിനും ട്രേഡിംഗിനുമായി യൂസർ ഫ്രണ്ട്‌ലിയായ ആൻഡ്രോയിഡ്, ഐഒഎസ് മൊബൈൽ ആപ്പുകൾ ഡെവലപ്പ് ചെയ്തു നൽകുന്നു.</p>
+            </div>
+            <div class="service-card">
+                <h3>💻 കസ്റ്റം സോഫ്റ്റ്‌വെയർ ഡെവലപ്മെന്റ്</h3>
+                <p>നിങ്ങളുടെ ബിസിനസ്സ് ആവശ്യങ്ങൾക്കനുസൃതമായ ഏത് തരത്തിലുള്ള വെബ് ആപ്ലിക്കേഷനുകളും സോഫ്റ്റ്‌വെയറുകളും.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- കോണ്ടാക്ട് സെക്ഷൻ -->
+    <section class="contact" id="contact">
+        <div class="container" style="flex-direction: column;">
+            <h2>ഇപ്പോൾ തന്നെ ഞങ്ങളുമായി ബന്ധപ്പെടൂ</h2>
+            <p style="margin-bottom: 20px;">നിങ്ങളുടെ അടുത്ത പ്രോജക്റ്റിനെക്കുറിച്ച് സംസാരിക്കാൻ ഞങ്ങളെ ബന്ധപ്പെടാം.</p>
+            <p><strong>ഇമെയിൽ:</strong> contact@mgmtech.com</p>
+            <p><strong>ഫോൺ:</strong> +91 XXXXXXXXXX</p>
+        </div>
+    </section>
+
+    <!-- ഫൂട്ടർ -->
+    <footer>
+        <p>&copy; 2026 MGM Tech. എല്ലാ അവകാശങ്ങളും നിക്ഷിപ്തം.</p>
+    </footer>
+
+</body>
+</html>
